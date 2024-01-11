@@ -20,8 +20,14 @@ app.get('/notes', (req, res) => {
 
 //get request for notes
 app.get('/api/notes', (req, res) => {
-    res.status(200).json(`${req.method} request received to get notes`);
-    console.info(`${req.method} request received to get notes`);
+    fs.readFile('./db/db.json', 'utf8', (err, data) => {
+        if (err) {
+            console.error(err);
+            res.status(500).json({ message: "Error reading notes data" });
+        } else {
+            res.json(JSON.parse(data));
+        }
+    });
 });
 
 //post request to add a note
@@ -36,6 +42,7 @@ app.post('/api/notes', (req, res) => {
         const newNote = {
             title,
             text,
+            id: Date.now()  
         };
 
     //obtain existing notes
