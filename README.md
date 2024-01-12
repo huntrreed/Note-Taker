@@ -47,4 +47,4 @@ GitHub: [@huntrreed](https://github.com/huntrreed)
 Email: huntrreed@gmail.com
 
 ### Deployed Link
-[Deployed Application Page](https://huntrreed.github.io/Note-Taker/)
+[Deployed Application Page](https://fast-citadel-83949-c361f994199c.herokuapp.com/notes)
