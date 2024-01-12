@@ -1,15 +1,1 @@
-[
-  {
-    "title": "Test Title"
-  },
-  {
-    "title": "Homework",
-    "text": "Finish Homework",
-    "id": "1705011477184"
-  },
-  {
-    "title": "Laundry",
-    "text": "Wash clothes",
-    "id": "1705011485421"
-  }
-]
+[{"title":"Test Title"},{"title":"Homework","text":"Finish Homework","id":"1705011477184"},{"title":"Laundry","text":"Wash clothes","id":"1705011485421"}]
